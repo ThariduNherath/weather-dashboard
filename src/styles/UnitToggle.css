@@ -1,0 +1,52 @@
+.unit-toggle {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    padding: 15px 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .toggle-label {
+    font-weight: 500;
+    color: #374151;
+    white-space: nowrap;
+  }
+  
+  .toggle-buttons {
+    display: flex;
+    background: #f3f4f6;
+    border-radius: 12px;
+    padding: 4px;
+    border: 2px solid #e5e7eb;
+  }
+  
+  .toggle-btn {
+    padding: 8px 16px;
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #6b7280;
+  }
+  
+  .toggle-btn.active {
+    background: white;
+    color: #6366f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toggle-btn:hover:not(.active) {
+    color: #374151;
+  }
+  
+  @media (max-width: 768px) {
+    .unit-toggle {
+      justify-content: center;
+      width: 100%;
+    }
+  }
