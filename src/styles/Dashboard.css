@@ -1,6 +1,7 @@
 /* src/styles/Dashboard.css */
 .dashboard {
     min-height: 100vh;
+    width: 100%;
     background: linear-gradient(135deg, 
       #667eea 0%, 
       #764ba2 25%, 

@@ -18,7 +18,8 @@ const Dashboard = ({
   city,
   handleSearch,
   handleUnitChange,
-  getCurrentLocation
+  getCurrentLocation,
+  children // <-- මේක තමයි ChatBot එක ගන්නේ
 }) => {
   const [currentTime, setCurrentTime] = useState(new Date());
   const [animatedBackground, setAnimatedBackground] = useState('default');
@@ -215,6 +216,11 @@ const Dashboard = ({
             </section>
           </main>
         )}
+        
+        {/* ChatBot එක වැටෙන්නේ මෙතැනටයි */}
+        <div className="floating-chatbot-container">
+          {children}
+        </div>
       </div>
     </div>
   );
